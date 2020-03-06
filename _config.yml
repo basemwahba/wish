@@ -1,0 +1,66 @@
+
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+
+# blog info
+title: Performance Matters
+description: >- # this means to ignore newlines until "baseurl:"
+  A blog about low-level software and hardware performance.
+baseurl: / # the subpath of your site, e.g. /blog
+url: "https://travisdowns.github.io"
+permalink: /:categories/:year/:month/:day/:title:output_ext
+google_analytics: UA-136594956-1
+
+# me info
+email: &email travis.downs@gmail.com
+author:
+  name: Travis Downs
+  email: *email
+  twitter: trav_downs
+twitter_username: trav_downs
+github_username:  travisdowns
+
+# jekyll-seo-tag
+# wants different format from minima
+twitter:
+  username: trav_downs
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# staticman (comments) configuration
+staticman_url: https://anasbasem.herokuapp.com/v2/entry/basemwahba/advanced/master/comments
+
+reCaptcha:
+  siteKey: 6LcWstQUAAAAALoGBcmKsgCFbMQqkiGiEt361nK1
+  secret: eteZTgxDkxg3sbrLwAPwiaAcdUh/zFRQQzjlmxdurvWvGqaFLOOBwFWUsA6NcMyoeAB1z0kl93Pdno4v0RelTKFXiwrcLAdQaOpR1Ckz7mim/9p8/Jvu7I00d0/OO3ZUPpDw5NGP6f7SKafKCT53dAzWyiWvpt7JfbnUMUubfA0rUTMGCToBIya/IrMVOPkjc1N25k0fz3uigElI6n1R2MwVOxmrpWyl99r8fpx8evKL7R4ycUkaL+CyUL4fCrfaAvOfyGnNG5eJQhv188OXpRuaxut2sXs273WH5BaDoU0vEGSMo9RrQwYl3oNTgb9aFTOhd5Npz+EpZuul+jwuCnZwDXQ2uc7i8+hDacSJy43IrTxrWkxANik3BvUIZHCKbrpKFUxQfjYCX8J6pjIt5uSpqxRfYDQwo8mKAHX9Fhg/r5a+e2NPG5HWZy6LEkAS4ny3l5lKGmM3EuJWzSOpYTpCXAbVTKfkjvd0gACJnbBhNR21xKfHfWhmH9bJE8/QqKrajqO3Myg+JHhMwRp/r7tNkuGWUhN3UBvYZRSpiSi53/fQvrYDhOQSPKSoMlbKO0AilrQj7mUxwBrpYAm0GP/5ptUIMDbUedXIDWEPyxLYSnNXrTJ/A71w8u1Fw3mURquylVUUP4si172SBOMZl/0auV6geG5UqXqvPxRxgFQ=
+
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      comments: true
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
